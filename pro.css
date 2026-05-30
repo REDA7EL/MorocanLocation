@@ -1,0 +1,586 @@
+ body {
+font-family: 'Arial', sans-serif;
+}
+html {
+scroll-behavior: smooth;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   scroll                                   */
+/* -------------------------------------------------------------------------- */
+html{
+scroll-behavior: smooth;
+}
+.scroll{
+opacity: 0;
+transform:translateY(30px);
+transition:all 0.6s ease-out;
+}
+.scroll.show{
+opacity: 1;
+transform: translateY(0);
+}
+/* -------------------------------------------------------------------------- */
+/*                               IMG-BACKground                               */
+/* -------------------------------------------------------------------------- */
+.hero-section {
+  position: relative;
+  background-image: url('IMG-BACK/TTTTTTTTTTTTTTTTTTTTTTTT.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.brand-title{
+font-size: 2rem !important;
+font-family: 'Aref Ruqaa Ink', serif  !important ;
+
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: #009344 !important;
+}
+.btn-outline-pink {
+  border: 1px solid #009344 !important;
+  color: black !important;
+}
+
+.btn-outline-pink:hover {
+  background-color: #009344 !important;
+  color: #fff;
+}
+.nav-link {
+  font-weight: 500;
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #009344 !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CITY-INFO                                 */
+/* -------------------------------------------------------------------------- */
+.CITY {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.PCARD,
+.SCARDA {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card1 {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background:#009344;
+  position: relative;
+  padding: 1.5rem;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 3px solid #009344;
+}
+
+.card1:hover {
+  border-color: #009344;
+  box-shadow: 0 10px 18px #009344;
+  transform: translateY(-9px);
+}
+
+.img-cart-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+.card-details {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.text-title {
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 2.9em;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .PCARD,
+  .SCARDA {
+    justify-content: center;
+  }
+
+  .card1 {
+    width: 90%;
+    max-width: 350px;
+    height: 350px;
+    margin: 15px 0;
+  }
+}
+
+.section-title {
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 2.5em;
+  color: #009344;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* -------------------------------------------------------------------------- */
+/*                         CART hotel+restaurant+stad                         */
+/* -------------------------------------------------------------------------- */
+.custom-card {
+  width: 100%;
+  max-width: 700px;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #009344;
+}
+
+.custom-card img {
+  height: 60%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.custom-card .card-body {
+  padding: 15px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-card .card-title {
+font-family: 'Aref Ruqaa Ink', serif;
+font-size: 1.4rem;
+font-weight: 900;
+color:#009344;
+margin-top: 1.1rem;
+}
+
+.card-title p{
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.custom-card .card-text {
+  font-size: 0.875rem;
+}
+.card-text{
+ font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 2rem;
+  margin-bottom:0.5em ;
+  font-weight: 900;
+  color: black;
+  overflow: auto;
+}
+
+#Text-Cart{
+  font-family: 'Aref Ruqaa Ink', serif;
+  margin-left: 36%;
+  margin-bottom: 0.6em;
+  font-size: 2.9rem;
+  font-weight: 800;
+}
+#text-green{
+  color: #009344;
+}
+#text-red{
+  color: red;
+}
+#text-black{
+  color:black;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                button-Hotel                                */
+/* -------------------------------------------------------------------------- */
+.button-Hotel{
+  background-color: #66BB6A;
+  color: white;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-Hotel:hover {
+  background-color: rgb(11, 99, 11);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              button-Restaurant                             */
+/* -------------------------------------------------------------------------- */
+.button-restaurant{
+  background-color: #009344;
+  color: white;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button-restaurant:hover {
+  background-color: rgb(11, 99, 11);
+}
+#zone-span{
+  color: red;
+}
+/* -------------------------------------------------------------------------- */
+/*                               button-stadium                               */
+/* -------------------------------------------------------------------------- */
+
+.button-stadium{
+  background-color:#009344 ;
+  color: white;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.button-stadium:hover {
+  background-color: rgb(11, 99, 11);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Reservation                              */
+/* -------------------------------------------------------------------------- */
+.booking-form {
+  background: #fff;
+  margin-top: 120px;
+  border: 3px solid #009344;
+}
+
+.input-group-text {
+  background: #f5f5f5;
+}
+
+.input-hover:hover {
+  border: 2px solid #009344;
+  border-radius: 5px;
+}
+
+.text-danger{
+  color: #009344;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                Smart Commute                               */
+/* -------------------------------------------------------------------------- */
+.service-card {
+  position: relative;
+  height: 250px; 
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #009344;
+}
+.fw-bold {
+  color: #009344;
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+.card-one {
+  background-image: url('IMG-BACK/op.png');
+}
+.card-two {
+  background-image: url('IMG-BACK/jad20241209-eco-vtc-indrive.jpg');
+}
+.card-three {
+  background-image: url('IMG-BACK/Morocco-Tram-main-1920x960.png');
+}
+.card-four {
+background-image: url(IMG-BACK/tran.jpg);
+}
+.card-five {
+  background-image: url('IMG-BACK/busway-1-1024x682-1-1024x560.png'); 
+}
+.card-six{
+  background-image: url(IMG-BACK/taxi.jpg);
+}
+
+
+.overlay-text {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+}
+.overlay-text h5{
+color: white;
+font-family: 'Aref Ruqaa Ink', serif;
+font-size: 1.5rem;
+}
+.overlay-text p{
+color: white;
+text-align: justify;
+
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.zone4{
+   position: relative;
+  top: 500px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   contact                                  */
+/* -------------------------------------------------------------------------- */
+
+.contact-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-position: center
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: white;
+}
+
+
+.contact-box h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.form-control {
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.btn-primary {
+  width: 100%;
+  font-weight: bold;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Registration                                */
+/* -------------------------------------------------------------------------- */
+.login-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  color: white;
+}
+
+
+.login-box h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background-color: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.btn-primary {
+  width: 100%;
+  font-weight: bold;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* --------------------------------- about -------------------------------- */
+
+.custom-footer {
+  background-color: #009344;
+  position: relative;
+  top: 200px;
+  color: #fff;
+  padding: 50px 20px;
+ font-family: 'Aref Ruqaa Ink', serif;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-top h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-top p {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.newsletter-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+  max-width: 100%;
+}
+
+.newsletter-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #21dd78;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-top: 1.3px solid white;
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+.link-group {
+  margin: 10px 20px;
+}
+
+.link-group h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color:black;
+}
+
+.link-group a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.link-group a:hover {
+  color: #fff;
+}
+
+.link-group i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: black;
+}
